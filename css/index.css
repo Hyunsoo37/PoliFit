@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* 헤더 */
+header {
+  background-color: #2563eb;
+  color: white;
+  padding: 16px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* 메인 섹션 */
+#home {
+  background-color: white;
+  padding: 64px 0;
+  text-align: center;
+}
+
+#home h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+#home p {
+  font-size: 18px;
+  color: #4b5563;
+  margin-bottom: 32px;
+}
+
+/* 기능 섹션 */
+#features {
+  padding: 64px 0;
+  background-color: #f3f4f6;
+}
+
+#features h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+}
+
+.card {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #4b5563;
+}
+
+/* 시장 조사 섹션 */
+#research {
+  padding: 64px 0;
+  background-color: white;
+}
+
+#research h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+#research p {
+  font-size: 18px;
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+#research ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #4b5563;
+}
+
+#research li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* 사전예약하기 섹션 */
+#reservation {
+  padding: 64px 0;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+#reservation h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+#reservation p {
+  font-size: 18px;
+  color: #4b5563;
+  margin-bottom: 32px;
+}
+
+#reservation .btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#reservation .btn:hover {
+  background-color: #1e40af;
+}
+
+/* 푸터 */
+footer {
+  background-color: #2563eb;
+  color: white;
+  padding: 16px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #home h2,
+  #features h2,
+  #research h2,
+  #reservation h2 {
+    font-size: 24px;
+  }
+}
